@@ -1,0 +1,14 @@
+<h2>Deferrable Views</h2>
+<button (click)="isTrue">Add True</button>
+@defer(when isTrue) {
+    <app-new-componet />
+} 
+ @placeholder {
+    <p>Mostrar antes de carregar algo</p>
+}
+@loading {
+    <p>Loading...</p>
+}
+@error {
+    <p>Loading failed: </p>
+}

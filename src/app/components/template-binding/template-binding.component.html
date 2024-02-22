@@ -1,0 +1,29 @@
+<h2>Template</h2>
+<!--<h3>Text Interpoletion</h3>
+<p>Nome: {{name}} Idade: {{age}}</p>
+<p>Você é: {{condition}}</p> 
+<br>
+<hr>
+<h2>Proprerty binding</h2>
+<button [disabled]="isDisabled">Button</button>
+<br>
+<br>
+<img [src]="srcValue" alt="Imagem png"/>
+<p [attr.aria-label]="name">Marcio M. Araujo</p>
+<hr>
+<h2>Class and Style binding</h2>
+<p [class.background-red]="age > 18" [class.background-blue]="age === 18">{{name}}</p>
+<h3>Diretivas de atributo</h3>
+<div [ngClass]="{'background-red': age >= 18, 'background-blue': age < 18 }">Class condicionais</div>
+
+<div [ngStyle]="{
+    color: age > 18 ? 'green': 'red'
+}">
+
+Estilo dinamico</div>
+-->
+<hr>
+<h2 #h2>Template Variable</h2>
+{{h2.innerText | json }}
+<input #name value="Marcio M. Araujo"/>
+{{name.value}}

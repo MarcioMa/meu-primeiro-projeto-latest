@@ -1,0 +1,17 @@
+<h2>Control Flow</h2>
+<!--<h3>IF</h3>
+@if (isTrue) {Sim 1 e === 1} @else {Não esta correto}
+-->
+<ul>
+    @for(item of itens; track item.name){
+        <li>{{item.name}}</li>
+    }@empty {
+        <li>Não contém valores</li>
+    }
+</ul>
+<h3>Switch Case</h3>
+@switch ('A') {
+    @case ('A') {
+        <p>Sim sua letra é A</p>
+    }
+}
