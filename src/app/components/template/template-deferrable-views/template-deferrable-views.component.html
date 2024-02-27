@@ -1,12 +1,12 @@
-<h2>Deferrable Views</h2>
-<button (click)="isTrue">Add True</button>
-@defer(when isTrue) {
+<h2 #trigger>Deferrable Views</h2>
+<app-new-componet/>
+@defer(on interaction(trigger)) {
     <app-new-componet />
 } 
- @placeholder {
+ @placeholder(minimum 5s) {
     <p>Mostrar antes de carregar algo</p>
 }
-@loading {
+@loading(minimum 5s) {
     <p>Loading...</p>
 }
 @error {
